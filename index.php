@@ -1,16 +1,27 @@
-<?php
-include('atas.php'); ?>
-<title>Home</title>
-<link rel="stylesheet" href="css/style.css">
-<?php
-include('atas-2.php');
-include('kiri.php');
-?>
+<!DOCTYPE html>
+<html lang="en">
 
-<main>
-    <img src="imgs/Logo-Untag-Surabaya-PNG-IfoxSoft.Com_.png" alt="">
-</main>
+<head>
+    <title>Daftar Mahasiswa</title>
 
-<?php
-include('bawah.php');
-?>
+    <!-- css -->
+
+
+    <!-- tampilan frame -->
+    <frameset rows="15%,*,7%" border="0">
+        <frame name="atas" src="atas.php">
+            <frameset cols="25%,*">
+                <frame name="kiri" src="kiri.php">
+                    <frame name="kanan" src="kanan.php">
+            </frameset>
+            <frame name="bawah" src="bawah.php">
+    </frameset>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

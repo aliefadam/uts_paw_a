@@ -1,3 +1,4 @@
-<head>
-    <link rel="stylesheet" href="css/bawah.css">
-</head>
+<?php
+include('model/functions.php');
+css('bawah');
+?>

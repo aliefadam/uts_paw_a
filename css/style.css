@@ -2,9 +2,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #d5cea3;
+    background-color: #d5cea3 !important;
 }
 
 img {
     width: 70%;
+}
+
+.pesan-sukses {
+    position: absolute;
+    width: 400px;
+    height: 30px;
+    background-color: red;
+    top: 10px;
+    animation: notif 300ms ease-in;
+}
+
+@keyframes notif {
+    from {
+        transform: translateY(-10px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }

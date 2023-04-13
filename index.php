@@ -4,9 +4,6 @@
 <head>
     <title>Daftar Mahasiswa</title>
 
-    <!-- css -->
-
-
     <!-- tampilan frame -->
     <frameset rows="15%,*,7%" border="0">
         <frame name="atas" src="atas.php">
@@ -17,11 +14,6 @@
             <frame name="bawah" src="bawah.php">
     </frameset>
 
-
 </head>
-
-<body>
-
-</body>
 
 </html>

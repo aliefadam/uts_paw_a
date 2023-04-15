@@ -1,16 +1,18 @@
 <?php
-include('model/functions.php');
+include('../model/functions.php');
 css('tampil-data');
 $data_mahasiswa = tampilData();
 ?>
 
-<div class="table-responsive">
-    <table class="table table-striped table-hover table-bordered">
+<h1>Tampil Data</h1>
+
+<div class="table-responsive mt-4">
+    <table class="table">
         <tr>
-            <td>NBI</td>
-            <td>Nama</td>
-            <td>Alamat</td>
-            <td>No Handphone</td>
+            <th>NBI</th>
+            <th>Nama</th>
+            <th>Alamat</th>
+            <th>No Handphone</th>
         </tr>
         <?php foreach ($data_mahasiswa as $mhs): ?>
             <tr>

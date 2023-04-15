@@ -1,3 +1,35 @@
 body {
     background-color: #3c2a21 !important;
+    font-family: "Poppins", sans-serif !important;
+    padding: 20px;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif !important;
+    color: #e5e5cb !important;
+    text-align: center;
+    font-size: 40px !important;
+}
+
+.list-group {
+    border: 1px solid #e5e5cb !important;
+}
+
+.list-group a {
+    color: #e5e5cb !important;
+    line-height: 200%;
+}
+
+.list-group .list-group-item {
+    border: 1px solid #e5e5cb !important;
+    height: 50px;
+    transition: 200ms;
+}
+
+.list-group .list-group-item:hover {
+    background-color: #1a120b !important;
+}
+
+.list-group-item {
+    background-color: transparent !important;
 }

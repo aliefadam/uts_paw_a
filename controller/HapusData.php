@@ -1,10 +1,13 @@
 <?php
+session_start();
+
 include('../model/functions.php');
 if (nbiKetemu($_POST)) {
     $nbi = $_POST['nbi'];
-    header("location: ../delete-data.php?nbi=$nbi");
+    header("location: ../views/delete-data.php?nbi=$nbi");
 } else {
-    echo "GAONO SUU";
+    header("location: ../views/kanan.php");
+    $_SESSION['pesan'] = "Data dengan nbi " . $_POST['nbi'] . " tidak ditemukan!";
 }
 
 ?>

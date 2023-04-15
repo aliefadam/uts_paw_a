@@ -2,3 +2,15 @@ body {
     background-color: #d5cea3 !important;
     padding: 20px;
 }
+
+input {
+    border: 2px solid #1a120b !important;
+    display: block;
+    width: 500px;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-bottom: 10px !important;
+    border-radius: 10px;
+}

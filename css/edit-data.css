@@ -1,4 +1,38 @@
 body {
     background-color: #d5cea3 !important;
-    padding: 20px;
+    padding: 30px;
+    max-height: 100vh;
+    font-family: "Poppins", sans-serif !important;
+}
+
+h1 {
+    font-family: "Bebas Neue", cursive !important;
+    font-size: 50px !important;
+    color: #1a120b !important;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    border: 2px solid #1a120b !important;
+    display: block;
+    width: 500px;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-bottom: 10px !important;
+    border-radius: 10px;
+}
+
+form input:nth-child(2) {
+    background-color: #eee !important;
+}
+
+button {
+    margin-top: 10px !important;
+    background-color: #1a120b !important;
+    color: #e5e5cb !important;
 }

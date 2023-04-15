@@ -1,3 +1,20 @@
 body {
     background-color: #1a120b !important;
+    padding: 20px;
+    max-height: 30vh;
+    font-family: "Poppins", sans-serif !important;
+}
+
+img {
+    width: 60px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+h1 {
+    font-size: 50px !important;
+    color: #e5e5cb !important;
+    text-align: center;
+    position: relative;
 }

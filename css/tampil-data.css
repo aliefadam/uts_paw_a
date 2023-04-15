@@ -1,4 +1,35 @@
 body {
     background-color: #d5cea3 !important;
-    padding: 20px;
+    padding: 30px;
+}
+
+h1 {
+    font-family: "Bebas Neue", cursive !important;
+    font-size: 50px !important;
+    color: #1a120b !important;
+}
+
+table {
+    /* border: 1px solid #1a120b !important; */
+    font-family: "Poppins", cursive !important;
+}
+
+table th {
+    background-color: #1a120b !important;
+    color: #e5e5cb !important;
+    text-align: center;
+}
+
+table td {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+table tr:nth-child(even) {
+    background-color: white !important;
+}
+
+table tr:nth-child(odd) {
+    background-color: rgba(26, 18, 11, 0.9);
+    color: #e5e5cb !important;
 }

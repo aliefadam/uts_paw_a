@@ -9,9 +9,13 @@ css('style');
 <?php
 $pesan = pesan();
 if (!empty($pesan)): ?>
-    <div class="pesan-sukses">
-        <p>
-            <?= $pesan ?>
-        </p>
-    </div>
+    <?php if ($pesan['notif'] == "success"): ?>
+        <div class="pesan-sukses bg-success">
+            <?= $pesan['msg'] ?>
+        </div>
+    <?php else: ?>
+        <div class="pesan-sukses bg-danger">
+            <?= $pesan['msg'] ?>
+        </div>
+    <?php endif; ?>
 <?php endif; ?>

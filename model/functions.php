@@ -38,8 +38,11 @@ function tambahData($data)
         return false;
     }
 
-    $query = "INSERT INTO mahasiswa VALUES('$nbi','$nama','$alamat','$no_hp')";
-    mysqli_query($conn, $query);
+    $query = "INSERT INTO mahasiswa VALUES(?,?,?,?)";
+    $stmt = mysqli_prepare($conn, $query);
+    mysqli_stmt_bind_param($stmt, "ssss", $nbi, $nama, $alamat, $no_hp);
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_close($stmt);
     return true;
 }
 
@@ -89,8 +92,11 @@ function updateData($data)
     $alamat = $data['alamat'];
     $no_hp = $data['no-hp'];
 
-    $query = "UPDATE mahasiswa SET nama='$nama', alamat='$alamat', no_hp='$no_hp' WHERE nbi='$nbi'";
-    mysqli_query($conn, $query);
+    $query = "UPDATE mahasiswa SET nama=?, alamat=?, no_hp=? WHERE nbi=?";
+    $stmt = mysqli_prepare($conn, $query);
+    mysqli_stmt_bind_param($stmt, "ssss", $nama, $alamat, $no_hp, $nbi);
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_close($stmt);
 }
 
 function hapusData($nbi)

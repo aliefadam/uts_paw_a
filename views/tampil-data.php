@@ -14,21 +14,23 @@ $data_mahasiswa = tampilData();
             <th>Alamat</th>
             <th>No Handphone</th>
         </tr>
-        <?php foreach ($data_mahasiswa as $mhs): ?>
-            <tr>
-                <td>
-                    <?= $mhs['nbi'] ?>
-                </td>
-                <td>
-                    <?= $mhs['nama'] ?>
-                </td>
-                <td>
-                    <?= $mhs['alamat'] ?>
-                </td>
-                <td>
-                    <?= $mhs['no_hp'] ?>
-                </td>
-            </tr>
-        <?php endforeach ?>
+        <?php if (!empty($data_mahasiswa)): ?>
+            <?php foreach ($data_mahasiswa as $mhs): ?>
+                <tr>
+                    <td>
+                        <?= $mhs['nbi'] ?>
+                    </td>
+                    <td>
+                        <?= $mhs['nama'] ?>
+                    </td>
+                    <td>
+                        <?= $mhs['alamat'] ?>
+                    </td>
+                    <td>
+                        <?= $mhs['no_hp'] ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        <?php endif; ?>
     </table>
 </div>

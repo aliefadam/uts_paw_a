@@ -7,7 +7,10 @@ if (nbiKetemu($_POST)) {
     header("location: ../views/edit-data.php?nbi=$nbi");
 } else {
     header("location: ../views/kanan.php");
-    $_SESSION['pesan'] = "Data dengan nbi " . $_POST['nbi'] . " tidak ditemukan!";
+    $_SESSION['pesan'] = [
+        "msg" => "Data dengan nbi " . $_POST['nbi'] . " tidak ditemukan!",
+        "notif" => "error",
+    ];
 }
 
 ?>
